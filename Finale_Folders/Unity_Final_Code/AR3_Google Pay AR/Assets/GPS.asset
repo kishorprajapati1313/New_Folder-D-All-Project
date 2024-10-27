@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: GPS
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5253583691670744058
+  m_GuidHigh: 10567461475933969552
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5565502206575029833
+      m_GuidHigh: 10046564522443153082
+    m_SerializedTextureGuid:
+      m_GuidLow: 9512985114495634431
+      m_GuidHigh: 12464663890461490571
+    m_Size: {x: 0.2, y: 0.20449439}
+    m_SpecifySize: 1
+    m_Name: google service
+    m_Texture: {fileID: 2800000, guid: 47174bffe98f84048b7d988bc461fbac, type: 3}

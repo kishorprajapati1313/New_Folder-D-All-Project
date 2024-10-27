@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <link rel="stylesheet" type="text/css" href="css/3dot.css">
+</head>
+<body>
+  <!-- Your sidebar content -->
+  <div class="sidebar-container">
+    <!-- Your sidebar content -->
+    <div id="sidebar" class="sidebar">
+      <h2>Sidebar Content</h2>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <!-- Add more sidebar items here -->
+      </ul>
+      <button id="closeBtn" onclick="closeSidebar()">Close Sidebar</button>
+    </div>
+
+    <!-- Overlay div to cover the main content when the sidebar is open -->
+    <div id="overlay" class="overlay" onclick="closeSidebar()"></div>
+  </div>
+
+  <!-- Your main content -->
+  <div id="main-content">
+    <h1>Main Content</h1>
+    <p>This is the main content of your website.</p>
+    <!-- Add your website's content here -->
+
+    <!-- Add a button to open the sidebar -->
+    <button id="openBtn" onclick="openSidebar()">Open Sidebar</button>
+  </div>
+
+  <!-- Include the sidebar.js file -->
+  <script src="js/3dot.js"></script>
+</body>
+</html>

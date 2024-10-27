@@ -1,0 +1,397 @@
+/* Basic styling for the admin panel */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 5px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 1%;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+section#content {
+    text-align: center;
+}
+
+section#content h2 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Additional styles for the dashboard section */
+
+.dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.widget {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.widget:hover {
+    background-color: #eaeaea;
+}
+
+.widget h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.stat-box {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stat-box li {
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+    transition: background-color 0.3s;
+}
+
+.stat-box li:hover {
+    background-color: #eaeaea;
+}
+
+.stat-box h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.stat-box .box-title {
+    font-size: 20px;
+    color: #333;
+}
+
+.stat-box .box-value {
+    font-size: 28px;
+    color: #333;
+}
+
+/* Customize the text colors for each box */
+.stat-box li:nth-child(1) {
+    background-color: #dc3434;
+    color: #fff;
+}
+
+.stat-box li:nth-child(2) {
+    background-color: #2d928b;
+    color: #fff;
+}
+
+.stat-box li:nth-child(3) {
+    background-color: #96782b;
+    color: #fff;
+}
+
+/* Add more styles as needed for additional boxes */
+
+.welcome {
+    text-align: left;
+    font-size: 16px;
+    color: #4ECDC4;
+}
+
+.section-title {
+    font-size: 24px;
+    color: #333;
+    margin-top: 40px;
+}
+
+/* Additional styles for the student section */
+
+.student-card {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.student-card:hover {
+    background-color: #eaeaea;
+}
+
+.student-card h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.student-card p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.semester-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.semester-table th,
+.semester-table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.semester-table th {
+    background-color: #f4f0f0;
+    color: #fff;
+}
+
+.semester-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.view-details {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4ECDC4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.view-details:hover {
+    background-color: #2D928B;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.student-table th,
+.student-table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.student-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.student-table tbody tr:nth-child(even) {
+    background-color: #fff6f6;
+}
+
+.student-table tbody tr:hover {
+    background-color: #eaeaea;
+}
+
+/* Add the following CSS styles to your existing styles */
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Additional styles for the student info section */
+#student-info {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#student-info p {
+    margin-bottom: 10px;
+}
+
+.view-details-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #4ECDC4;
+    color: #f5ebeb;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    background-image: linear-gradient(to right, #4ECDC4, #2D928B);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.view-details-button:hover {
+    background-color: #2D928B;
+    background-image: linear-gradient(to right, #2D928B, #4ECDC4);
+}
+
+.view-details-button:active {
+    background-color: #1B7E75;
+    background-image: linear-gradient(to right, #1B7E75, #389F97);
+}
+
+.view-details-button span {
+    transition: transform 0.3s;
+}
+
+.view-details-button:hover span {
+    transform: translateX(100%);
+}
+
+.add-student-button,
+.end-sem-button {
+    background-color: #4ECDC4;
+    color:white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+a{
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.add-student-button:hover,
+.end-sem-button:hover {
+    background-image: linear-gradient(to right, #4ECDC4, #2D928B);
+}
+
+.add-student-button:focus,
+.end-sem-button:focus {
+    outline: none;
+}
+
+.corner-button.left {
+    position: absolute;
+    left: 0;
+    top: 90%;
+    transform: translateY(-50%);
+}
+
+.corner-button.right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section-title {
+    position: relative;
+}
+
+.section-title::before,
+.section-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 2px;
+}
+

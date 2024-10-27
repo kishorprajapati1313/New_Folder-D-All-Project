@@ -1,0 +1,196 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.my-form {
+  width: 500px;
+  padding: 30px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+.my-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+table td {
+  padding: 10px;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+.submit-container {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.submit-button  {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4ECDC4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #2D928B;
+  transform: scale(1.1);
+}
+
+.submit-button:active {
+  background-color: #1B7E75;
+  transform: scale(0.9);
+}
+
+
+.message {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.error-message {
+  background-color: #FFCCCC;
+  color: #FF0000;
+}
+
+.success-message {
+  background-color: #CCE5CC;
+  color: #006600;
+}
+
+.suggest-container {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+
+
+input[type="text"],
+input[type="number"]  {
+  height: 30px; /* Adjust the height value as needed */
+  width:  140%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  
+    font-size: 16px; /* Adjust the font size value as needed */
+    padding: 6px; /* Adjust the padding value as needed */
+
+}
+
+
+.new-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4ECDC4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.t1{
+  float:right;
+}
+
+.new-button::before,
+.new-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50.5%;
+  height: 100%;
+  background-color: #fff;
+  transition: transform 0.3s;
+  z-index: -1;
+}
+
+.new-button::before {
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+
+.new-button::after {
+  right: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.new-button:hover {
+  background-color: #45b3a6;
+}
+
+.new-button:hover::before {
+  transform: scaleX(1);
+}
+
+.new-button:hover::after {
+  transform: scaleX(1);
+}
+
+a{
+  text-decoration:none;
+  color:white;
+}
+
+.semester-label {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  padding-bottom: 10px;
+}
+.semester-value {
+  font-size: 16px;
+  color: #555;
+}
+
+
+/*  for the subject form  */
+
+.form-container .my-form .subject input[type='text'], input[type='number']{
+  height: 30px; /* Adjust the height value as needed */
+  width:  100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  
+    font-size: 16px; /* Adjust the font size value as needed */
+    padding: 6px; /* Adjust the padding value as needed */
+
+
+}
+
+.delete a{
+  color:red;
+}
